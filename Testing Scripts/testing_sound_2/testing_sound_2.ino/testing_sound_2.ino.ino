@@ -1,4 +1,19 @@
-//THIS ONE WORKS!!!!!!!!!
+/*What am I trying to figure out:
+ * Can I call a specific sound at will by executing a line of code
+ * 
+ * What are the test parameters:
+ * sound files stored on local storage named 001.wav - 010.wav.
+ * Speakers connected to pins 8 and 7 (labled SPK1 and SPK2)
+ * 
+ * Did it work:
+ * Yes, using the DFPlayer library I was able to play a sound file with 'myDFPlayer.playPhysicalTrack(track);'
+ * where 'track' was a number value correlating to the name of the file (1 = 001.wav, 10 = 010.wav, etc)
+ * 
+ * Notes:
+ * With some pointers from Protonerd I was able to get this to work.
+ * Further below is his code as an example.
+ */
+ 
 #include <DFPlayer.h>
 #include <DFPlayerSerial.h>
 
